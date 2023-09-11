@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.count {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  color: white;
+}

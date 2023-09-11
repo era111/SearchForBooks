@@ -1,0 +1,65 @@
+.book_card {
+  height: 300px;
+  width: 200px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 2px rgb(172, 172, 172);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.skeleton_image {
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  background-color: #b0b0b0;
+}
+
+.skeleton_text {
+  position: absolute;
+  display: inline-block;
+  width: 150px;
+  height: 18px;
+  left: 20px;
+  top: 230px;
+  background-color: rgb(138, 138, 138);
+  border-radius: 20px;
+}
+
+.secondary {
+  width: 120px;
+  left: 20px;
+  top: 260px;
+}
+
+.book_card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0,
+    rgba(255, 255, 255, 0.2) 20%,
+    rgba(255, 255, 255, 0.4) 60%,
+    rgba(255, 255, 255, 0)
+  );
+  animation: shimmer 5s infinite;
+  content: "";
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
