@@ -22,7 +22,7 @@ const BookCard: FC<Props> = ({ id, imgUrl, title, authors, category }) => {
 
   const clickHandle = (e: MouseEvent<HTMLElement>) => {
     e.stopPropagation()
-    navigate(`/book/${id}`)
+    navigate(`/SearchForBooks/${id}`)
   }
 
   const handleEnter = () => {

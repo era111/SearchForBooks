@@ -11,7 +11,7 @@ function App() {
     <Provider store={store}>
       <Routes>
         <Route path="/SearchForBooks" element={<MainPage />} />
-        <Route path="/SearchForBooks/book/:id" element={<BookPage />} />
+        <Route path="/SearchForBooks/:id" element={<BookPage />} />
       </Routes>
     </Provider>
   )

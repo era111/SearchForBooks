@@ -39,7 +39,9 @@ const BookInfo = () => {
     <div className={styles.container}>
       {book && (
         <div className={styles.card}>
-          <BreadCrumbs links={[{ title: "Home", to: "/" }]}></BreadCrumbs>
+          <BreadCrumbs
+            links={[{ title: "Home", to: "/SearchForBooks" }]}
+          ></BreadCrumbs>
           <div className={styles.book}>
             <div className={styles.image}>
               <img src={book.volumeInfo.imageLinks.thumbnail} alt=""></img>
