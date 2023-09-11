@@ -10,8 +10,8 @@ function App() {
   return (
     <Provider store={store}>
       <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/book/:id" element={<BookPage />} />
+        <Route path="/SearchForBooks" element={<MainPage />} />
+        <Route path="/SearchForBooks/book/:id" element={<BookPage />} />
       </Routes>
     </Provider>
   )
